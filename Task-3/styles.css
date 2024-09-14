@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    display: flex; /* Center content horizontally and vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: 'Digital-7 Mono', sans-serif; /* Custom font for the entire body */
+}
+
+/* Font-face for Digital-7 Mono */
+@font-face {
+    font-family: 'Digital-7 Mono'; /* Name of the font family */
+    src: url('https://fonts.cdnfonts.com/s/12008/Digital-7%20Mono.woff') format('woff'); /* Font file URL */
+}
+
+/* Styling for the calculator container */
+.calculator {
+    background-color: #d68fcd; /* Blue background for calculator */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the calculator */
+    box-shadow: 0px 5px 15px rgba(243, 238, 238, 0.2); /* Shadow effect */
+    width: 300px; /* Fixed width */
+}
+
+/* Styling for the calculator title */
+h1 {
+    color: #151414; /* White text color */
+    font-size: 1.5em; /* Font size */
+    margin: 0 0 15px; /* Margin below the title */
+    text-align: center; /* Center-align text */
+    font-family: 'Digital-7 Mono', sans-serif; /* Custom font */
+}
+
+/* Styling for the display area */
+.display {
+    background-color: #ebeced; /* Light blue background */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 15px; /* Margin below the display */
+    padding: 10px; /* Padding inside the display */
+}
+
+/* Styling for the input inside the display */
+.display input {
+    width: 100%; /* Full width */
+    border: none; /* No border */
+    background: none; /* No background */
+    font-size: 3em; /* Large font size */
+    text-align: right; /* Right-align text */
+    color: #000; /* Black text color */
+    outline: none; /* Remove outline */
+    font-family: 'Digital-7 Mono', sans-serif; /* Custom font */
+}
+
+/* Styling for the buttons container */
+.buttons {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four columns of equal width */
+    gap: 10px; /* Space between buttons */
+}
+
+/* General button styling */
+button {
+    background-color: #c5d5e6; /* Blue background for buttons */
+    border: none; /* No border */
+    color: #090909; /* White text color */
+    font-size: 1.5em; /* Font size */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0px 5px 10px rgba(19, 14, 14, 0.1); /* Shadow effect */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    font-family: 'Digital-7 Mono', sans-serif; /* Custom font */
+    height: 70px; /* Fixed height for buttons */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #a9bbf4; /* Darker blue on hover */
+}
+
+/* Styling for operator buttons */
+.operator {
+    background-color: #86a7e6; /* Light blue background for operators */
+}
+
+/* Styling for clear button */
+.clear {
+    background-color: #ecada2; /* Tomato red background */
+}
+
+/* Styling for cut button (remove last character) */
+.cut {
+    background-color: #eac3b5; /* Orange red background */
+}
+
+/* Styling for decimal point button */
+.decimal {
+    background-color: #9eb9d5; /* Blue background */
+}
+
+/* Styling for equal button */
+.equal {
+    background-color: #c5e9c5; /* Lime green background */
+    grid-column: span 2; /* Span the button across two columns */
+}
